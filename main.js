@@ -33,7 +33,8 @@ commands.set("channel", async (msg, argv) => {
         }
         else
         {
-            console.log(`${argv[1]} channel not found`);
+            msg.channel.send("Cound not find channel!");
+            return;
         }
     }
 
